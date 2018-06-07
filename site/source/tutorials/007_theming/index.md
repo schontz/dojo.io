@@ -152,6 +152,8 @@ This should have created a `themes` directory in the project's `src` directory, 
 
 Dojo 2 uses the concept of a `key` to be able to look up and load classnames for a theme, it is a composite of the package name and the widget name joined by `/`. These keys are used as the keys to object that is exported from the main `theme.ts`.
 
+{% include_codefile 'demo/finished/biz-e-corp/package.json' lines:1-5 highlight:2 desc:'File: package.json. The package name, biz-e-corp, is used in the theme key.' %}
+
 {% instruction 'Theme the Worker widget' %}
 
 In order to theme the `Worker` widget, we need to create `worker.m.css` within our `themes/dojo` directory and use it within `theme.ts`. As mentioned above, the naming of the key of the exported theme must match the name from the project's `package.json` and the name of the widget's style sheet joined by a forward slash (`/`).
